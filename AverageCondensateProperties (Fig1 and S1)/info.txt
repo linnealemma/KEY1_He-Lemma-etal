@@ -1,0 +1,27 @@
+Workflow:
+In FIJI load up the .ome.companion file
+Duplicate Venus stack
+Save as 3D_filename_Venus_raw
+Run CLAHE_stack script
+Save as 3D_filename_Venus_CLAHE
+Max Z project
+CLAHE
+Threshold in FIJI
+Invert LUT
+Process > Noise > Despeckle
+Save as 2D_filename_Venus_FIJI_threshold
+Duplicate Chlorophyll stack from original data
+Save as 3D_filename_chlorophyll_raw
+Run CLAHE_stack script
+Save as 3D_filename_chlorophyll_CLAHE
+Max Z project
+Run CLAHE
+Save as 2D_filename_chlorophyll_CLAHE
+
+Go to MATLAB
+
+Go through MAIN_AvgCondensateProperties_2D_20240124.m for each stack
+Sometimes will need to set Tc in FUNC_CellFinder2D_Tiff.m
+
+Then plot the data sets
+PLOT_CondensateProperties_20240129

@@ -1,0 +1,28 @@
+Workflow:
+In FIJI load up the .ome.companion file
+Duplicate Venus stack
+Save as 3D_filename_Venus_raw
+Run CLAHE_stack script
+Save as 3D_filename_Venus_CLAHE
+Duplicate Venus from original stack
+Max Z project
+CLAHE
+Threshold in FIJI
+Invert LUT
+Process > Noise > Despeckle
+Save as 2D_filename_Venus_FIJI_threshold
+Duplicate Chlorophyll stack from original data
+Save as 3D_filename_chlorophyll_raw
+Run CLAHE_stack script
+Save as 3D_filename_chlorophyll_CLAHE
+Duplicate chlorophyll from original stack
+Max Z project
+Run CLAHE
+Save as 2D_filename_chlorophyll_CLAHE
+Duplicate SNAP stack from original data
+Save as 3D_filename_SNAP_raw
+
+
+MAIN_SNAPIntensity_20240705.m will measure the average intensity in each cell and in each condensate
+PLOT_SNAP_20240705.m made the plots for the figure
+Only used the bin2 data for the plots because that seemed like plenty of data and a lot of the analysis was already done
